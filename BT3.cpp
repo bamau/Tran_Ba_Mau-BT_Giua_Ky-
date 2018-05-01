@@ -39,6 +39,10 @@ class Time
 			temp.seconds = temp.seconds%60;
 			temp.hours += temp.minutes/60;
 			temp.minutes = temp.minutes%60;
+			while(temp.hours>24)
+			{
+				temp.hours-=24;
+			}
 			return temp;
 		}
 		void nhap(){
